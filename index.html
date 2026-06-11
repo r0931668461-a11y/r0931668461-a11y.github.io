@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>王小明 | 個人學習履歷</title>
+  <meta name="description" content="王小明的個人學習履歷與作品集，展示程式設計與多媒體剪輯的學習成果。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- WebGL Background Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">Wang.X.M</div>
+      <div class="nav-links">
+        <a href="#about">關於</a>
+        <a href="#skills">技能</a>
+        <a href="#journey">地圖</a>
+        <a href="#projects">專題</a>
+        <a href="#experience">經歷</a>
+        <a href="#service">活動</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="home">
+    <div class="hero-content scroll-reveal">
+      <div class="hero-text">
+        <h1 class="title">王小明</h1>
+        <p class="subtitle">持續探索、永不停止。</p>
+        <p class="intro">九年級生 / 邏輯思考 / 程式實作 / 影片剪輯</p>
+        <p class="bio" style="margin-top: 1.5rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.8;">
+          我是一位對「學習新事物」充滿好奇心的學生，喜歡透過實作來理解知識。習慣把困難拆解成小步驟，一步一步完成，也樂於和同學討論不同解法，從中學習更有效率的思考方式。
+        </p>
+      </div>
+      <div class="hero-image-wrapper">
+        <img class="hero-image" src="./images/大頭照.png" alt="王小明大頭照" />
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- About Snapshot -->
+    <section class="section" id="about">
+      <div class="section-container">
+        <div class="section-heading scroll-reveal">
+          <p class="section-kicker">Self Introduction</p>
+          <h2 class="section-title">自我介紹與學習輪廓</h2>
+        </div>
+        <div class="about-layout">
+          <article class="statement-panel scroll-reveal">
+            <p>
+              我喜歡把生活中遇到的問題拆解、觀察、記錄，再透過作品或報告把想法整理出來。對我來說，學習不是只看最後的分數，而是看自己能不能從每一次練習中更會提問、更能合作，也更懂得修正方法。
+            </p>
+            <p>
+              在國中階段，我逐漸養成「先理解脈絡、再動手實作、最後整理反思」的學習習慣。無論是程式練習、科學實驗、影片剪輯或志工服務，我都希望能留下清楚的過程紀錄，讓未來的自己可以回頭檢視成長軌跡。
+            </p>
+          </article>
+          <aside class="profile-panel scroll-reveal">
+            <h3>基本輪廓</h3>
+            <ul class="detail-list">
+              <li><span>學習興趣</span><strong>資訊科技、數理邏輯、自然觀察、影音表達</strong></li>
+              <li><span>常用工具</span><strong>Python、HTML/CSS、Canva、影片剪輯軟體</strong></li>
+              <li><span>性格特質</span><strong>穩定執行、願意討論、遇到問題會拆解處理</strong></li>
+            </ul>
+          </aside>
+        </div>
+
+        <div class="cards-grid compact-grid">
+          <div class="card scroll-reveal">
+            <h3>我的學習習慣</h3>
+            <p>先列出問題，再蒐集線索；用流程圖、表格或筆記整理資訊；完成後寫下做得好的地方與下次要修正的地方。</p>
+          </div>
+          <div class="card scroll-reveal">
+            <h3>關鍵成長節點</h3>
+            <p>從資訊科技體驗營接觸程式與 AI，之後在資訊研究社練習 Python 與網頁設計，逐步把想法做成可展示的作品。</p>
+          </div>
+          <div class="card scroll-reveal">
+            <h3>我想被看見的樣子</h3>
+            <p>有耐心、會提問、能整合、敢嘗試，也願意在收到回饋後重新調整方法，把學習成果做得更完整。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learning Outcomes & Skills -->
+    <section class="section" id="skills">
+      <div class="section-container">
+        <h2 class="section-title scroll-reveal">學術表現與技能</h2>
+        <div class="cards-grid">
+          <div class="card scroll-reveal">
+            <h3>邏輯 (Logic)</h3>
+            <p>擅長邏輯推理與應用題解題，將困難拆解成小步驟，並習慣使用不同方法驗證答案。</p>
+          </div>
+          <div class="card scroll-reveal">
+            <h3>資訊 (Coding)</h3>
+            <p>具備基礎 Python 程式設計能力，熟悉 API 概念與條件判斷，並能獨立完成網頁 HTML 排版。</p>
+          </div>
+          <div class="card scroll-reveal">
+            <h3>自然 (Science)</h3>
+            <p>對科學實驗充滿熱忱，能理解基本科學原理並獨立完成詳細的實驗報告。</p>
+          </div>
+          <div class="card scroll-reveal">
+            <h3>英文 (English)</h3>
+            <p>具備基礎閱讀能力，持續擴充單字量，目標為能流暢閱讀技術原文文件。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learning Map -->
+    <section class="section" id="journey">
+      <div class="section-container">
+        <div class="section-heading scroll-reveal">
+          <p class="section-kicker">Learning Map</p>
+          <h2 class="section-title">學習地圖</h2>
+        </div>
+        <div class="learning-map">
+          <article class="map-panel scroll-reveal">
+            <h3>國中三年的主題軸線</h3>
+            <div class="journey-track">
+              <div class="journey-stop">
+                <span>七年級</span>
+                <strong>建立基礎與探索興趣</strong>
+                <p>熟悉校園學習節奏，嘗試不同課程與社團，開始確認自己對資訊、數理和科學觀察的興趣。</p>
+              </div>
+              <div class="journey-stop">
+                <span>八年級</span>
+                <strong>把想法變成作品</strong>
+                <p>透過 Python、網頁排版與影片剪輯練習，把零散想法轉換成能展示、能說明的作品成果。</p>
+              </div>
+              <div class="journey-stop">
+                <span>九年級</span>
+                <strong>整理成果與設定方向</strong>
+                <p>回顧學習歷程，補強英文與程式基礎，將作品、活動與反思整理成清楚的升學資料。</p>
+              </div>
+            </div>
+          </article>
+          <aside class="progress-panel scroll-reveal">
+            <h3>我最投入的能力</h3>
+            <div class="subject-bars">
+              <div class="subject-row">
+                <span>程式實作</span>
+                <div class="bar"><i style="width: 88%"></i></div>
+              </div>
+              <div class="subject-row">
+                <span>邏輯推理</span>
+                <div class="bar"><i style="width: 92%"></i></div>
+              </div>
+              <div class="subject-row">
+                <span>自然探究</span>
+                <div class="bar"><i style="width: 84%"></i></div>
+              </div>
+              <div class="subject-row">
+                <span>影音表達</span>
+                <div class="bar"><i style="width: 86%"></i></div>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="course-grid">
+          <article class="card scroll-reveal">
+            <p class="eyebrow">自主學習</p>
+            <h3>每週一個小程式</h3>
+            <p>以條件判斷、迴圈、資料整理與 API 串接為主題，累積短小但完整的練習作品。</p>
+          </article>
+          <article class="card scroll-reveal">
+            <p class="eyebrow">科學探究</p>
+            <h3>實驗觀察與紀錄</h3>
+            <p>在科學實驗社練習提出假設、記錄變因與整理結果，並把實驗過程寫成清楚報告。</p>
+          </article>
+          <article class="card scroll-reveal">
+            <p class="eyebrow">閱讀寫作</p>
+            <h3>技術文件閱讀</h3>
+            <p>從簡短英文文件開始練習，搭配單字整理與中文摘要，逐步提升閱讀資訊文本的能力。</p>
+          </article>
+          <article class="card scroll-reveal">
+            <p class="eyebrow">數位表達</p>
+            <h3>圖像與影片整理</h3>
+            <p>用剪輯、排版與簡報把複雜資訊講清楚，讓作品不只完成，也能被別人理解。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Project -->
+    <section class="section" id="projects">
+      <div class="section-container">
+        <h2 class="section-title scroll-reveal">精選專題</h2>
+        <div class="project-showcase scroll-reveal">
+          <div class="project-info">
+            <h3 class="project-title">簡易天氣查詢 App</h3>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">API</span>
+              <span class="tag">HTML/CSS</span>
+            </div>
+            <p class="project-desc">製作一個可以查詢即時天氣的程式，輸入城市名稱後，透過 API 串接回傳溫度與天氣狀態。在此專案中學會了 API 概念、條件判斷、錯誤處理與基礎除錯能力。</p>
+            <a href="#" class="btn-secondary">查看專案細節</a>
+          </div>
+          <div class="project-preview">
+            <img class="preview-box" src="./images/作品集.png" alt="作品集預覽" />
+          </div>
+        </div>
+        <div class="project-details">
+          <article class="detail-card scroll-reveal">
+            <p class="eyebrow">我的角色</p>
+            <h3>需求拆解、程式撰寫、畫面整理</h3>
+            <p>先定義使用者輸入城市後需要看到哪些資訊，再規劃 API 回傳資料的判斷邏輯，最後用簡單網頁呈現查詢結果。</p>
+          </article>
+          <article class="detail-card scroll-reveal">
+            <p class="eyebrow">使用方法</p>
+            <h3>API 串接、錯誤處理、資料顯示</h3>
+            <p>練習處理城市名稱錯誤、網路回應失敗與資料缺漏等情況，讓作品不只在理想狀態下能運作。</p>
+          </article>
+          <article class="detail-card scroll-reveal">
+            <p class="eyebrow">具體成果</p>
+            <h3>完成可操作 Demo 與反思紀錄</h3>
+            <p>專案完成後整理學到的 API 概念、除錯流程與後續優化方向，作為下一個程式作品的基礎。</p>
+          </article>
+        </div>
+
+        <div class="dual-projects">
+          <article class="card scroll-reveal">
+            <p class="eyebrow">專題二</p>
+            <h3>校慶 50 週年影片剪輯</h3>
+            <p>整理活動照片與影片素材，依照時間軸安排片段、加入字幕與轉場，讓校慶回憶能用更有節奏的方式呈現。</p>
+            <ul class="bullet-list">
+              <li>負責素材挑選與片段排序</li>
+              <li>練習字幕節奏與背景音量控制</li>
+              <li>作品獲得影片剪輯佳作</li>
+            </ul>
+          </article>
+          <article class="card scroll-reveal">
+            <p class="eyebrow">專題三</p>
+            <h3>科學實驗紀錄報告</h3>
+            <p>從實驗目的、材料、步驟到結果討論完整整理，並嘗試用圖表輔助說明，讓觀察結果更容易被比較與理解。</p>
+            <ul class="bullet-list">
+              <li>記錄實驗變因與觀察結果</li>
+              <li>用表格整理數據差異</li>
+              <li>將結論連結到生活中的科學現象</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section class="section" id="experience">
+      <div class="section-container">
+        <h2 class="section-title scroll-reveal">經歷與足跡</h2>
+        <div class="timeline">
+          <div class="timeline-item scroll-reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>資訊科技體驗營</h3>
+              <span class="timeline-date">台灣大學資工系</span>
+              <p>第一次接觸 AI 與程式設計，進行基礎程式設計與機器人操作，確立對資訊領域的濃厚興趣。</p>
+            </div>
+          </div>
+          <div class="timeline-item scroll-reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>資訊研究社</h3>
+              <span class="timeline-date">油土伯國中 / 組員</span>
+              <p>學習 Python 與簡單網頁設計，能獨立完成簡單網頁與基礎程式練習，將想法化為實際畫面。</p>
+            </div>
+          </div>
+          <div class="timeline-item scroll-reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>科學實驗社 & 偏鄉志工</h3>
+              <span class="timeline-date">課外活動</span>
+              <p>參與科學實驗並記錄過程；投入偏鄉志工服務，從幫助他人中學習溝通與同理心。</p>
+            </div>
+          </div>
+          <div class="timeline-item scroll-reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>校慶運動會 (400公尺接力)</h3>
+              <span class="timeline-date">油土伯國中</span>
+              <p>擔任班級接力選手，學會團隊合作與在時間壓力下的專注能力，培養不放棄的精神。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service & Activities -->
+    <section class="section" id="service">
+      <div class="section-container">
+        <div class="section-heading scroll-reveal">
+          <p class="section-kicker">Service & Activities</p>
+          <h2 class="section-title">服務與活動</h2>
+        </div>
+        <div class="service-layout">
+          <div class="activity-stack">
+            <article class="activity-card scroll-reveal">
+              <div class="activity-marker">01</div>
+              <div>
+                <p class="eyebrow">服務學習</p>
+                <h3>偏鄉志工服務</h3>
+                <p>協助活動帶領與學習陪伴，學會依照不同對象調整說明方式，也更理解溝通與同理心的重要。</p>
+              </div>
+            </article>
+            <article class="activity-card scroll-reveal">
+              <div class="activity-marker">02</div>
+              <div>
+                <p class="eyebrow">社團活動</p>
+                <h3>資訊研究社專案練習</h3>
+                <p>和同學一起討論程式問題、交換解法，從別人的寫法中看見更有效率的思考路徑。</p>
+              </div>
+            </article>
+          </div>
+          <aside class="memo-board scroll-reveal">
+            <h3>他人怎麼描述我</h3>
+            <div class="memo-item">
+              <span>老師</span>
+              <p>遇到困難時會先整理問題，再提出具體的疑問，能看出持續修正的態度。</p>
+            </div>
+            <div class="memo-item">
+              <span>同學</span>
+              <p>討論時會把步驟講清楚，也願意協助整理資料，是團隊裡穩定推進的人。</p>
+            </div>
+            <div class="memo-item">
+              <span>服務經驗</span>
+              <p>面對不同年齡的對象能保持耐心，並嘗試用更容易理解的例子說明。</p>
+            </div>
+          </aside>
+        </div>
+        <div class="impact-strip scroll-reveal">
+          <div class="impact-card">
+            <span>4+</span>
+            <p>主要學習領域持續累積</p>
+          </div>
+          <div class="impact-card">
+            <span>3</span>
+            <p>代表性專題作品整理</p>
+          </div>
+          <div class="impact-card">
+            <span>100%</span>
+            <p>活動後保留反思與修正紀錄</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards Grid -->
+    <section class="section" id="awards">
+      <div class="section-container">
+        <h2 class="section-title scroll-reveal">榮譽紀錄</h2>
+        <div class="badges-grid">
+          <div class="badge scroll-reveal">
+            <div class="badge-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M7 3v18"/><path d="M3 7.5h4"/><path d="M3 12h18"/><path d="M3 16.5h4"/><path d="M17 3v18"/><path d="M17 7.5h4"/><path d="M17 16.5h4"/></svg>
+            </div>
+            <h4>影片剪輯佳作</h4>
+            <p>校慶50週年影片</p>
+          </div>
+          <div class="badge scroll-reveal">
+            <div class="badge-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+            </div>
+            <h4>學習表現優良</h4>
+            <p>數理表現穩定</p>
+          </div>
+          <div class="badge scroll-reveal">
+            <div class="badge-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z"/><path d="m14.5 12.5 2-2"/><path d="m11.5 9.5 2-2"/><path d="m8.5 6.5 2-2"/><path d="m17.5 15.5 2-2"/></svg>
+            </div>
+            <h4>全市數學競賽</h4>
+            <p>優秀成績</p>
+          </div>
+          <div class="badge scroll-reveal">
+            <div class="badge-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h4>Python 認證</h4>
+            <p>基礎能力檢定</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reflection & Goals -->
+    <section class="section" id="reflection">
+      <div class="section-container">
+        <h2 class="section-title scroll-reveal">學習反思與目標</h2>
+        <div class="cards-grid">
+          <div class="card scroll-reveal">
+            <div class="badge-icon" style="margin-bottom: 0.5rem; color: var(--text-primary);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20h10"/><path d="M10 20c5.5-1.25 6-9 3-12"/><path d="M9.5 5.5c-5 3.5-5 9.5-3 12"/><path d="M12 15c4-2 6-6 4-9"/></svg>
+            </div>
+            <h3>心態轉變與成長</h3>
+            <p>從「被動接收」轉變為「主動探索」，我逐漸理解到學習不只是為了考試，而是用來解決問題與提升能力的最佳工具。</p>
+          </div>
+          <div class="card scroll-reveal">
+            <div class="badge-icon" style="margin-bottom: 0.5rem; color: var(--text-primary);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            </div>
+            <h3>反思與行動計畫</h3>
+            <p>深知自己在英文與程式基礎仍有不足，因此我制定了明確計畫：每天背誦單字，並每週實作一個小程式，確保自己持續進步。</p>
+          </div>
+          <div class="card scroll-reveal">
+            <div class="badge-icon" style="margin-bottom: 0.5rem; color: var(--text-primary);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+            </div>
+            <h3>未來升學展望</h3>
+            <p>短期目標為穩固數學與英文成績，長期則立志進入資訊相關科系，期望能在程式設計與邏輯思考的領域中繼續深耕。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer CTA -->
+  <footer class="footer" id="contact">
+    <div class="footer-container scroll-reveal">
+      <h2>"It does not matter how slowly you go so long as you do not stop."</h2>
+      <p style="margin-top: 1rem; color: var(--text-secondary);">— 帶著不輕言放棄的態度，持續向未來的資訊領域邁進。</p>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Wang Xiao Ming. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
